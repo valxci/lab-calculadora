@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <h1>CALCULADORA!</h1>
+
+    <form id="formulario">
+
+        <label for="nombre">Operador 1</label>
+        <input type="number" id="operador1" required >
+
+        <label for="signo">+,-,*,/</label>
+        <input type="text" id="signo" requirsed >
+
+        <label for="operador2">Operador 2</label>
+        <input type="number" id="operador2" required >
+
+        <button type="submit">Calcular</button>
+    </form>
+    <div class="resultado" id="resultado"></div>
+    <script src="laboratorio.js"></script>
+</body>
+
+</html>
