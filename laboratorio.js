@@ -38,14 +38,21 @@ formulario.addEventListener('submit', function (event) {
         textofinal = `tu resultado es  ${resultado}`
     }
 
-    else if (signo == "**"){
+    else if (signo == "**") {
         resultado = operador1 ** operador2
         textofinal = `tu resultado es  ${resultado}`
     }
 
-    else if (signo == "%"){
-        resultado = operador1 % operador2
-        textofinal = `tu resultado es  ${resultado}`
+    else if (signo == "%") {
+
+        if (operador2 == 0) {
+            resultado = "ERROR No se puede dividir por 0"
+            textofinal = resultado
+        }
+        else {
+            resultado = operador1 % operador2
+            textofinal = `tu resultado es  ${resultado}`
+        }
     }
 
     else {
